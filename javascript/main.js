@@ -29,6 +29,7 @@ function rejectCookies() {
     document.getElementById('mainContent').style.display = 'none';
     document.cookie = "didNotAccept=true; path=/";
     alert('You have rejected cookies. You will not be able to access the website.');
+    window.close();
 }
 
 
