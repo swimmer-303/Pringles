@@ -8,6 +8,31 @@ A collection of functions that are for Pringles, a fancy little game site.
 To visit the site, check out https://ellieeet123.github.io/
 
 ===========================================================================================================================*/
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.cookie.indexOf('didNotAccept=true') === -1) {
+        document.getElementById('consentBox').style.display = 'flex';
+        document.getElementById('mainContent').style.display = 'none';
+    } else {
+        document.getElementById('consentBox').style.display = 'none';
+        document.getElementById('mainContent').style.display = 'block';
+    }
+});
+
+function acceptCookies() {
+    document.getElementById('consentBox').style.display = 'none';
+    document.getElementById('mainContent').style.display = 'block';
+    document.cookie = "cookieAccepted=true; path=/";
+}
+
+function rejectCookies() {
+    document.getElementById('consentBox').style.display = 'none';
+    document.getElementById('mainContent').style.display = 'none';
+    document.cookie = "didNotAccept=true; path=/";
+    alert('You have rejected cookies. You will not be able to access the website.');
+}
+
+
+
 
 //resizes an iframe based on how tall the content inside of it is. Used for the sidebar.
 function resizeIframe(obj){
