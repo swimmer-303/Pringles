@@ -14,27 +14,22 @@
         <div>
             <iframe id="sidebar" frameborder="0" style="float: left;margin-top: 350;top: 350;margin-left: -10px;" scrolling="no" width="170" src="/other/sidebar.html" onload='sidebarLoaded()'></iframe>
         </div>
-	<div id="consentBox">
-        <img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20231115025707/gfg.png"
-             alt="Logo">
+	    <div id="consentBox">
         <div id="consentContent">
             <header id="consentHeader">
-                  Cookies: The choice is yours
-              </header>
+                Cookies: The Choice is Yours
+            </header>
             <p>
-              We use cookies to make our site work well
-              for you and so we can continually improve it.
-              <br>The cookies that are necessary to 
-              keep the site functioning are always on
+                We use cookies to ensure our site works well for you and to help us continually improve it.<br>
+                The cookies necessary to keep the site functioning are always enabled.
             </p>
             <div class="buttons">
-                <button class="consentButton">
-                      Accept Cookies
-                  </button>
-                <button class="rejectButton">
-                      Reject
-                  </button>
+                <button class="consentButton" onclick="acceptCookies()">
+                    Accept Cookies
+                </button>
+                <button class="rejectButton" onclick="rejectCookies()">
+                    Reject
+                </button>
             </div>
         </div>
     </div>
