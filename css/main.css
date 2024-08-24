@@ -3,6 +3,61 @@ body {
   background-image: url('/images/bg/default.png');
 }
 */
+/* Hide the main content initially */
+#mainContent {
+    display: none;
+}
+
+/* Styling for the consent box */
+#consentBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#consentContent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+#consentHeader {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.consentButton, .rejectButton {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.consentButton {
+    background: #4CAF50;
+    color: #fff;
+}
+
+.rejectButton {
+    background: #f44336;
+    color: #fff;
+}
+
 
 @font-face {
   font-family: "trebuchetms";
